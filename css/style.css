@@ -214,16 +214,58 @@ gap: 40px;
 
 .box-section {
     background-color: #2E2F42;
-    padding: 188px 0;
-    max-width: 1440px;
+    padding: 72px 0;
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-     url(../images/hero.jpg);
+     url(../images/hero_mob.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+@media (min-resolution: 192dpi) {
+    .box-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+        url(../images/hero_mob@2x.jpg);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .box-section {
+        padding-top: 112px;
+        padding-bottom: 112px;
+        max-width: 768px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+        url(../images/hero_tab.jpg);
+    }
+}
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .box-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+        url(../images/hero_tab@2x.jpg);
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .box-section {
+        max-width: 1440px;
+        padding-top: 188px;
+        padding-bottom: 188px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+        url(../images/hero.jpg);
+    }
+}
+
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+    .box-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+        url(../images/hero@2x.jpg);
+    }
+}
+        
 
 .header-title {
     color: #FFF;
